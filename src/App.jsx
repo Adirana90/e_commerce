@@ -1,11 +1,50 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import { NavBar } from "./components/navigation";
+import { Shop } from "./page/shop";
+import { Contact } from "./page/contact";
+import { About } from "./page/about";
+import { Footer } from "./components/footer";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <NavBar />,
+    element: (
+      <div>
+        <NavBar />
+        <Footer />
+      </div>
+    ),
+  },
+  {
+    path: "/shop",
+    element: (
+      <div>
+        <NavBar />
+        <Shop />
+        <Footer />
+      </div>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <div>
+        <NavBar />
+        <About />
+        <Footer />
+      </div>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <div>
+        <NavBar />
+        <Contact />
+        <Footer />
+      </div>
+    ),
   },
 ]);
 
