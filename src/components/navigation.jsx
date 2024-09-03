@@ -45,11 +45,11 @@ export const NavBar = () => {
         </NavLink>
       </nav>
       <div>
-        <button className="text-[#d1d4d7] mx-3 rounded-full hover:animate-ping">
+        <button className="text-[#d1d4d7] mx-3 rounded-full">
           <FaSearch />
         </button>
         <button className="relative overflow-hidden group text-[#d1d4d7] hover:text-black mx-3 p-[8px_24px] border-2 rounded-3xl hover:border-2  hover:border-[#6A9C89] hover:bg-[#fff]">
-          <span className="absolute w-0 group-hover:w-full h-full transition-all ease-out duration-300 top-0 left-0 bg-slate-100"></span>
+          <span className="absolute w-0 group-hover:w-full h-full transition-all ease-linear duration-300 top-0 left-0 bg-slate-100"></span>
           <span className="relative">Login</span>
           <FaArrowRightLong className="inline-block ml-2 group-hover:animate-slideIn" />
         </button>

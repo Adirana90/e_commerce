@@ -5,6 +5,7 @@ import { Shop } from "./page/shop";
 import { Contact } from "./page/contact";
 import { About } from "./page/about";
 import { Footer } from "./components/footer";
+import { Home } from "./page/Home";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     element: (
       <div>
         <NavBar />
+        <Home />
         <Footer />
       </div>
     ),
