@@ -14,7 +14,7 @@ export const NavBar = () => {
           className={({ isActive }) =>
             isActive
               ? "text-[#5ae70f] px-4"
-              : "text-[#d1d4d7] px-4 hover:text-[#94938a]"
+              : "text-[#d1d4d7] px-4 hover:text-[#94938a] transition-all"
           }
         >
           Home
@@ -22,7 +22,9 @@ export const NavBar = () => {
         <NavLink
           to="/shop"
           className={({ isActive }) =>
-            isActive ? "text-[#5c8ab9] px-4" : "text-[#d1d4d7] px-4"
+            isActive
+              ? "text-[#5ae70f] px-4"
+              : "text-[#d1d4d7] px-4 hover:text-[#94938a] transition-all"
           }
         >
           Shop
@@ -30,7 +32,9 @@ export const NavBar = () => {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-[#1e2901] px-4" : "text-[#d1d4d7] px-4"
+            isActive
+              ? "text-[#5ae70f] px-4"
+              : "text-[#d1d4d7] px-4 hover:text-[#94938a] transition-all"
           }
         >
           About
@@ -38,7 +42,9 @@ export const NavBar = () => {
         <NavLink
           to="/Contact"
           className={({ isActive }) =>
-            isActive ? "text-[#5c8ab9] px-4" : "text-[#d1d4d7] px-4"
+            isActive
+              ? "text-[#5ae70f] px-4"
+              : "text-[#d1d4d7] px-4 hover:text-[#94938a] transition-all"
           }
         >
           Contact
